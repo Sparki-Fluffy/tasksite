@@ -2,20 +2,20 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse('Hello, world')
+    return render(request, 'main/index.html')
 
 
 def news(request):
-    return HttpResponse('News page')
+    return render(request, 'main/news.html')
 
 
 def support(request):
-    return HttpResponse('Support page')
+    return render(request, 'main/support.html')
 
 
 def schedule(request):
-    return HttpResponse('Schedule page')
+    return render(request, 'main/schedule')
 
 
 def reservation(request):
-    return HttpResponse('Reservation page')
+    return render(request, 'main/reservation')
