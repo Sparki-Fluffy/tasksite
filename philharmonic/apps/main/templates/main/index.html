@@ -65,10 +65,10 @@
       </a>
 
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Бронирование</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Расписание</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Поддержка</a>
-        <a class="py-2 link-body-emphasis text-decoration-none" href="#">Новости</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'reservation' %}">Бронирование</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'schedule' %}">Расписание</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'news' %}">Поддержка</a>
+        <a class="py-2 link-body-emphasis text-decoration-none" href="{% url 'news' %}">Новости</a>
       </nav>
     </div>
 

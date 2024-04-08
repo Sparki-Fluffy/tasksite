@@ -31,6 +31,10 @@ INSTALLED_APPS = [
     'django_extensions',
     'debug_toolbar',
     'main.apps.MainConfig',
+    'news.apps.NewsConfig',
+    'support.apps.SupportConfig',
+    'schedule.apps.ScheduleConfig',
+    'reservation.apps.ReservationConfig',
 ]
 
 MIDDLEWARE = [
