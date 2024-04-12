@@ -1,9 +1,7 @@
 from pathlib import Path
-import os
-import sys
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-sys.path.append(os.path.join(BASE_DIR, 'apps'))
 
 SECRET_KEY = 'django-insecure-g$gr9yfm-p8dh290byka+mpx6k(buxgb^r3c)^z-p4^sx@6dk*'
 
