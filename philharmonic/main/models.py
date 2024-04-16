@@ -2,7 +2,10 @@ from django.db import models
 
 
 class News(models.Model):
-    pass
+    title = models.CharField(max_length=35)
+    content = models.TextField()
+    pub_date = models.DateField()
+    event = models.IntegerField()
 
 
 class Events(models.Model):
