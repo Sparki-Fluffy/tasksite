@@ -34,15 +34,25 @@ class Users(models.Model):
 
 
 class Filials(models.Model):
-    pass
+    title = models.CharField(max_length=30)
+    address = models.CharField(max_length=256)
+    # TODO: add photo
 
 
 class Home(models.Model):
-    pass
+    # TODO: add poster
+    description = models.CharField(max_length=256)
+    recommendations = models.CharField(max_length=256)
+    # TODO: add photo
+    # TODO: add video
+    # TODO: add projects
 
 
 class Booking(models.Model):
-    pass
+    user = models.CharField(max_length=128) # TODO: change after with User table
+    event = models.CharField(max_length=128) # TODO: change after with Event table
+    count = models.IntegerField()
+    status = models.CharField(max_length=64)
 
 
 class Forum(models.Model):
