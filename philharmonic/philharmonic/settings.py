@@ -61,8 +61,12 @@ WSGI_APPLICATION = 'philharmonic.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'PhilharmonicDB',
+        'USER': 'root',
+        'PASSWORD': '128432506',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
